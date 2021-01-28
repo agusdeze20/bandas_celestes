@@ -1,0 +1,76 @@
+#menu {
+  text-align: center;
+  background-color: #0000; }
+  #menu #menu ul {
+    background-color: #0000;
+    font: small-caps 100%/200% serif;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #menu #menu ul #menu ul li {
+      display: inline-block; }
+      #menu #menu ul #menu ul li #menu ul li a {
+        color: #5ebef5;
+        padding: 15px 10px;
+        display: inline-block;
+        text-decoration: none; }
+        #menu #menu ul #menu ul li #menu ul li a #menu ul li a:hover {
+          background-color: #fadf47; }
+
+.listadiscos {
+  padding: 20px;
+  background-size: contain;
+  color: #28694b;
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  grid-auto-rows: auto; }
+  .listadiscos .listadiscos a {
+    text-decoration: none;
+    color: darkslategrey; }
+
+.redes h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: small;
+  color: white; }
+  .redes h2 .redes ul {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: center; }
+    .redes h2 .redes ul .redes li {
+      display: inline-block; }
+      .redes h2 .redes ul .redes li .redes li:hover {
+        transform: scale(2); }
+        .redes h2 .redes ul .redes li .redes li:hover .redes a {
+          margin: 10px;
+          padding: 10px; }
+
+h1 {
+  font-size: 20px; }
+
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 60px; }
+
+h4 {
+  font-size: 80px; }
+
+h5 {
+  font-size: 100px; }
+
+h6 {
+  font-size: 120px; }
+
+.zoomimg-6 {
+  width: 600px; }
+
+.zoomimg-4 {
+  width: 400px; }
+
+.zoomimg-2 {
+  width: 200px; }

@@ -1,0 +1,238 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color:black;
+}
+
+.logo{
+	width: 200px;
+	height: 80px;
+	animation-name: logo;
+	animation-duration: .1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+}
+@keyframes logo{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+	
+}
+.titulo{
+	margin-top: 10px;
+	font-family: fantasy;
+	font-size: 50px;
+	text-align: center;
+	color: rgb(22, 100, 68);
+}
+#menu{	
+	text-align: center;
+	background-color: rgba(73, 37, 37, 0);
+}
+
+#menu ul{
+	background-color: rgba(255, 255, 255, .15);  
+	font: small-caps 100%/200% serif;
+	list-style: none;
+	margin: 0;	
+	padding: 0;
+}
+#menu ul li{
+	display: inline-block;
+}
+#menu ul li a{
+	color: rgb(94, 190, 245);
+	padding: 15px 10px;
+	display: inline-block;
+	text-decoration: none;
+}
+#menu ul li a:hover{
+	background-color: rgb(255, 161, 73);
+}
+.contenedorvideo{
+	width: 100%;
+	justify-content: center;
+}
+.spotify{
+	position: absolute;
+	padding: 40px;
+	margin-bottom: 30px;
+}
+.contacto{
+	margin: 0;
+	color: darkslategray;
+	text-align: center;
+	font-size: 30px;
+	
+}
+.formulario{
+	width: 300px;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin-top: 20px;
+	background-color: rgb(73, 37, 37);
+	border: 5px;
+	padding: 20px;	
+	position: absolute;
+	right: 50px;
+	
+}
+input{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 8px;
+	font-size: 15px;
+}
+#textarea{
+	text-align: left;
+	
+}
+.contactenos{
+	font-size: 20px;
+	color: cornsilk;
+}
+.titulolavela{
+	background-color: rgba(250, 197, 127, 0.705);
+	font-weight: bold;
+	text-align: center;
+	font-size: 50px;
+	padding: 20px;
+}
+.bandap1{
+	font-family: fantasy;
+	margin: 0;
+	text-align: center;
+	font-size: 50px;
+}
+.banda{
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 20px;
+	font-family: sans-serif;
+	font-size: 40px;
+	color: rgb(22, 100, 68);
+}
+
+
+.integrantes{
+	color: darkslategray;
+	background-color: black;
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px;
+}
+.integrantesimg{
+	width: 100%;
+}
+
+.historia{
+	margin: 20px 20px 20px 20px;
+	padding: 20px;
+	color:  rgb(22, 100, 68);
+	font-size: 50px;
+	font-family: sans-serif;
+	text-align: center;
+}
+.historiap{
+	margin: 10px;
+	padding: 20px;
+	background-color: rgba(250, 197, 127, 0.705);
+	font-size: 20px;
+	font-family: sans-serif;
+	color: rgb(13, 17, 17);
+	
+	
+}
+.discos{
+	margin: 20px 20px 20px 20px;
+	padding: 20px;
+	text-align: center;
+	color: rgb(22, 100, 68);
+}
+.listadiscos{
+	text-align: center;
+	padding: 20px;
+	background-size: contain;
+	color: rgb(40, 105, 75);
+}
+.listadiscos a{
+	text-decoration: none;
+	color: darkslategrey;
+}
+
+.fotos{
+	margin: 20px 20px 20px 20px;
+	padding: 20px;
+	text-align: center;
+	color: rgb(22, 100, 68);
+}
+.gridcont{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+	align-items: center;
+}
+.zoomimg:hover{
+	transform: scale(1.1);
+	
+}
+.gridcont img{
+	width: 100%;
+	object-fit: cover;
+	padding: 10px;
+	margin: 10px;
+}
+.redes h2{
+	text-align: center;
+	padding-top: 30px;
+	font-size: small;
+	color: azure;
+}
+.redes ul{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	float: center;
+}	
+.redes li{
+	display: inline-block;
+}
+.redes li:hover{
+	transform: scale(2.0);
+}
+.redes a{
+	margin: 10px;
+	padding: 10px;
+}
+@media screen and (max-width:576px){
+	.titulo{
+		text-align:center;
+		color: deepskyblue;
+	}
+	#menu{
+		position: relative;
+		text-align: center;
+		background-color:rgb(46, 41, 41);
+	}
+	.contenedorvideo{
+		width: 100%;
+	}
+	.titulolavela{
+		text-align: center;
+		font-size: 30px;
+	}
+}
+#carousel1{
+	width: 650px;
+	height: 650px;
+	display: block;
+	margin: 0 auto;
+}

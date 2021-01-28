@@ -1,0 +1,80 @@
+$negro: #0000;
+
+#menu{	
+    text-align: center;
+    background-color: $negro;
+    
+    #menu ul{
+        background-color:$negro;  
+        font: small-caps 100%/200% serif;
+        list-style: none;
+        margin: 0;	
+        padding: 0;
+        #menu ul li{
+            display: inline-block;
+            $naranja: rgb(250, 223, 71);
+            #menu ul li a{
+                color: rgb(94, 190, 245);
+                padding: 15px 10px;
+                display: inline-block;
+                text-decoration: none;
+                
+                #menu ul li a:hover{
+                    background-color:$naranja;
+                }}}}}
+                $verde:rgb(40, 105, 75);
+                .listadiscos{
+                    padding: 20px;
+                    background-size: contain;
+                    color: rgb(40, 105, 75);
+                    display: grid;
+                    grid-template-columns: (3,1fr);
+                    grid-gap: 10px;
+                    grid-auto-flow: row;
+                    grid-auto-rows: auto;
+                    
+                    .listadiscos a{
+                        text-decoration: none;
+                        color: darkslategrey;
+                    }}
+                    $blanco: rgb(255, 255, 255); 
+                    .redes h2{
+                        text-align: center;
+                        padding-top: 30px;
+                        font-size: small;
+                        color: $blanco;
+                        .redes ul{
+                            text-align: center;
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            float: center;
+                            .redes li{
+                                display: inline-block;
+                                .redes li:hover{
+                                    transform: scale(2.0);
+                                    .redes a{
+                                        margin: 10px;
+                                        padding: 10px;
+                                    }}}}}
+                                    
+                                    $color: negro; 
+                                    p{
+                                        @if ($color == azul) {
+                                            color: black;
+                                        } @else if ($color == rojo){
+                                            color: red;
+                                        }
+                                        
+                                    }
+                                    @for $i from 1 through 6{
+                                        h#{$i}  {
+                                            font-size: $i * 20px;
+                                        }
+                                    }
+                                    $i: 6;
+                                    @while $i > 0 {
+                                        .zoomimg-#{$i} {
+                                            width: 100px * $i;
+                                        }
+                                        $i: $i - 2;
+                                    }
