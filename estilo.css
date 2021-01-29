@@ -50,6 +50,7 @@ body{
 	padding: 15px 10px;
 	display: inline-block;
 	text-decoration: none;
+	width: 100%;
 }
 #menu ul li a:hover{
 	background-color: rgb(255, 161, 73);
@@ -243,7 +244,7 @@ input{
 	}
 }
 #carousel1{
-	width: 650px;
+	width: 100%;
 	height: 650px;
 	display: block;
 	margin: 0 auto;
