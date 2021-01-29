@@ -126,6 +126,18 @@ input{
 	text-align: center;
 	font-family: Arial;
 	font-size: 30px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+	align-items: center;
+	
+}
+.integrantes1{
+	width: 100%;
+	margin: 5px;
 }
 .integrantesimg{
 	width: 100%;
@@ -212,7 +224,7 @@ input{
 	margin: 10px;
 	padding: 10px;
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:600px){
 	.titulo{
 		text-align:center;
 		color: deepskyblue;
