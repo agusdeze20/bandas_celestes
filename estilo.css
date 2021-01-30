@@ -51,7 +51,7 @@ header label:hover{
 	justify-content: center;
 }
 #menu li:hover{
-	background: rgb(0,0,0,0.3));
+	background: rgb(0,0,0,0.3);
 }
 #menu li a{
 	display: block;
