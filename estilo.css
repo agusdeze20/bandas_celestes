@@ -30,30 +30,34 @@ body{
 	text-align: center;
 	color: rgb(22, 100, 68);
 }
-#menu{	
-	text-align: center;
-	background-color: rgba(73, 37, 37, 0);
+#btn-menu{
+	display: none;
 }
-
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+header label:hover{
+	cursor: pointer;
+	background: rgb(0,0,0,0.3);
+}
 #menu ul{
-	background-color: rgba(255, 255, 255, .15);  
-	font: small-caps 100%/200% serif;
+	margin: 0;
 	list-style: none;
-	margin: 0;	
 	padding: 0;
+	display: flex;
+	justify-content: center;
 }
-#menu ul li{
-	display: inline-block;
+#menu li:hover{
+	background: rgb(0,0,0,0.3));
 }
-#menu ul li a{
-	color: rgb(94, 190, 245);
-	padding: 15px 10px;
-	display: inline-block;
+#menu li a{
+	display: block;
+	padding: 20px;
+	color: white;
 	text-decoration: none;
-	width: 100%;
-}
-#menu ul li a:hover{
-	background-color: rgb(255, 161, 73);
 }
 .contenedorvideo{
 	width: 100%;
@@ -225,13 +229,31 @@ input{
 	margin: 10px;
 	padding: 10px;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:768px){
+	header label{
+		display: block;
+	} 
+	#menu{
+		position: absolute;
+		background: darkcyan;
+		width: 70%;
+		margin-left: -70%;
+	}
+	#menu ul{
+		flex-direction: column;
+	}
+	#menu li{
+		border-top: 1px solid white;
+	}
+	#btn-menu:checked ~ #menu{
+		margin: 0;
+	}
 	.titulo{
 		text-align:center;
 		color: deepskyblue;
 	}
 	#menu{
-		position: relative;
+		position: absolute;
 		text-align: center;
 		background-color:rgb(46, 41, 41);
 	}
@@ -240,8 +262,14 @@ input{
 	}
 	.titulolavela{
 		text-align: center;
-		font-size: 30px;
+		font-size: 20px;
 	}
+}
+.bandap1{
+	padding: 20px;
+}
+.titulolavela{
+	margin: 40px;
 }
 #carousel1{
 	width: 100%;
