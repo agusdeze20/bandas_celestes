@@ -48,29 +48,24 @@
           margin: 10px;
           padding: 10px; }
 
-h1 {
-  font-size: 20px; }
+.bloque {
+  background-color: brown;
+  text-align: right;
+  width: 100%; }
 
-h2 {
-  font-size: 40px; }
+.bloque__link {
+  width: auto;
+  background-color: cadetblue; }
 
-h3 {
-  font-size: 60px; }
+.bloque__texto {
+  background-color: chocolate; }
 
-h4 {
-  font-size: 80px; }
+.bloque__titulo {
+  text-decoration: none;
+  width: 100%;
+  color: chartreuse; }
 
-h5 {
-  font-size: 100px; }
-
-h6 {
-  font-size: 120px; }
-
-.zoomimg-6 {
-  width: 600px; }
-
-.zoomimg-4 {
-  width: 400px; }
-
-.zoomimg-2 {
-  width: 200px; }
+.bloque__enlace-titulo {
+  text-decoration: none;
+  text-align: start;
+  font-style: italic; }

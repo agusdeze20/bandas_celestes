@@ -57,24 +57,27 @@ $negro: #0000;
                                         padding: 10px;
                                     }}}}}
                                     
-                                    $color: negro; 
-                                    p{
-                                        @if ($color == azul) {
-                                            color: black;
-                                        } @else if ($color == rojo){
-                                            color: red;
-                                        }
-                                        
+                                    .bloque{
+                                        background-color: brown;
+                                        text-align: right;
+                                        width: 100%;
                                     }
-                                    @for $i from 1 through 6{
-                                        h#{$i}  {
-                                            font-size: $i * 20px;
-                                        }
+                                    .bloque__link{
+                                        width: auto;
+                                        background-color: cadetblue;
                                     }
-                                    $i: 6;
-                                    @while $i > 0 {
-                                        .zoomimg-#{$i} {
-                                            width: 100px * $i;
-                                        }
-                                        $i: $i - 2;
+                                    .bloque__texto{   
+                                        background-color: chocolate;
                                     }
+                                    .bloque__titulo{
+                                        text-decoration: none;
+                                        width: 100%;
+                                        color: chartreuse;
+                                    }
+                                    .bloque__enlace-titulo{
+                                        text-decoration: none;
+                                        text-align: start;
+                                        font-style: italic;
+                                    }
+                                    
+                                    
