@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	background-color:black;
 }
-
+/*logo "la vela puerca*/
 .logo{
 	width: 200px;
 	height: 80px;
@@ -33,6 +33,7 @@ body{
 #btn-menu{
 	display: none;
 }
+/*btn*/
 header label{
 	display: none;
 	width: 100%;
@@ -44,6 +45,7 @@ header label{
 header label:hover{
 	cursor: pointer;
 }
+/*barra menu*/
 #menu ul{
 	text-align: center;
 	margin: 0;
@@ -69,6 +71,7 @@ header label:hover{
 	padding: 40px;
 	margin-bottom: 30px;
 }
+/*formulario*/
 .contacto{
 	margin: 0;
 	color: rgb(80, 191, 255);
@@ -111,6 +114,7 @@ form input{
 	padding: 20px;
 	margin: 20px;
 }
+/*seccion banda*/
 .bandap1{
 	font-family: fantasy;
 	margin: 0;
@@ -125,8 +129,7 @@ form input{
 	font-size: 50px;
 	color: rgb(0, 255, 229);
 }
-
-
+/*seccion banda*/
 .integrantes{
 	color: rgb(40, 107, 112);
 	background-color: black;
@@ -135,21 +138,19 @@ form input{
 	font-size: 30px;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: repeat(3,1fr);
+	grid-template-columns: repeat(2,1fr);
 	grid-column-gap: 10px;
 	grid-row-gap: 15px;
 	align-items: center;
 	
 }
-.integrantes1{
+.integrante1{
 	width: 100%;
-	height: 100%;
-	margin: 5px;
 }
 .integrantesimg{
 	width: 100%;
 }
+/*seccion historia*/
 .historia{
 	margin: 20px 20px 20px 20px;
 	padding: 20px;
@@ -168,6 +169,7 @@ form input{
 	
 	
 }
+/*seccion discos*/
 .discos{
 	margin: 20px 20px 20px 20px;
 	padding: 20px;
@@ -187,7 +189,7 @@ form input{
 	text-decoration: none;
 	color: darkslategrey;
 }
-
+/*seccion fotos*/
 .fotos{
 	margin: 20px 20px 20px 20px;
 	padding: 20px;
@@ -196,7 +198,9 @@ form input{
 	font-family: sans-serif;
 	font-size: 50px;
 }
+/*grid de fotos*/
 .gridcont{
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	grid-template-rows: repeat(3,1fr);
@@ -214,6 +218,7 @@ form input{
 	padding: 10px;
 	margin: 10px;
 }
+/*redes*/
 .redes h2{
 	text-align: center;
 	padding-top: 30px;
@@ -222,10 +227,10 @@ form input{
 	color:rgb(22, 114, 105);
 }
 .redes ul{
-	padding: 30px;
+	padding: 20px;
 	margin: 20px;
 	display: grid;
-	grid-template-columns: repeat(4,8%);
+	grid-template-columns: repeat(4,1fr);
 	justify-content: center;
 }	
 .redes li{
@@ -243,6 +248,7 @@ form input{
 	font-weight: bold;
 	font-family: cursive;
 }
+/*fotos de discos*/
 #grid {
 	display: grid;
 	grid-template-columns: repeat(4,25%);
@@ -260,10 +266,9 @@ form input{
 
 @media screen and (max-width:768px){
 	header label{
-		background-color: rgb(41, 82, 78);
+		background-color: rgb(46, 41, 41);
 		display: block;
 	} 
-	
 	#menu{
 		position: absolute;
 		background: darkcyan;
@@ -278,6 +283,9 @@ form input{
 	}
 	#btn-menu:checked ~ #menu{
 		margin: 0;
+	}
+	.logo{
+		display: none;
 	}
 	.titulo{
 		text-align:center;
@@ -295,5 +303,4 @@ form input{
 		text-align: center;
 		font-size: 20px;
 	}
-	
 }
