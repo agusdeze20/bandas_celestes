@@ -27,7 +27,7 @@ body{
 	margin-top: 10px;
 	font-family: fantasy;
 	font-size: 50px;
-	text-align: center;
+	text-align:center;
 	color: rgb(80, 191, 255);
 }
 #btn-menu{
@@ -45,6 +45,7 @@ header label:hover{
 	cursor: pointer;
 }
 #menu ul{
+	text-align: center;
 	margin: 0;
 	list-style: none;
 	padding: 0;
@@ -62,7 +63,7 @@ header label:hover{
 }
 .contenedorvideo{
 	width: 100%;
-	justify-content: center;
+	height: 100%;
 }
 .spotify{
 	padding: 40px;
@@ -217,22 +218,30 @@ form input{
 	text-align: center;
 	padding-top: 30px;
 	font-size: 15px;
+	font-family: cursive;
 	color:rgb(22, 114, 105);
 }
 .redes ul{
+	padding: 30px;
 	margin: 20px;
-	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(4,8%);
+	justify-content: center;
 }	
 .redes li{
-	display: inline-block;
-	width: 40px;
+	display:inline-block;
+	width: 20px;
 }
+
 .redes li:hover{
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
-.redes a{
-	margin: 10px;
-	padding: 10px;
+.creador{
+	text-align: center;
+	color: rgb(22, 114, 105);
+	font-size: 15px;
+	font-weight: bold;
+	font-family: cursive;
 }
 #grid {
 	display: grid;
