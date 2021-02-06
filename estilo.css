@@ -47,6 +47,7 @@ header label:hover{
 }
 /*barra menu*/
 #menu ul{
+	border-top: 1px solid brown;
 	text-align: center;
 	margin: 0;
 	list-style: none;
@@ -230,7 +231,7 @@ form input{
 	padding: 20px;
 	margin: 20px;
 	display: grid;
-	grid-template-columns: repeat(4,1fr);
+	grid-template-columns: repeat(4,30px);
 	justify-content: center;
 }	
 .redes li{
