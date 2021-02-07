@@ -24,7 +24,7 @@ body{
 	
 }
 .titulo{
-	margin-top: 10px;
+	margin: 10px;
 	font-family: fantasy;
 	font-size: 50px;
 	text-align:center;
@@ -273,17 +273,17 @@ form input{
 	#menu{
 		position: absolute;
 		background: darkcyan;
-		width: 70%;
+		width: 50%;
 		margin-left: -100%;
 	}
 	#menu ul{
 		flex-direction: column;
 	}
 	#menu li{
-		border-top: 1px solid rgb(0, 255, 136);
+		border-top: 1px solid rgb(0, 255, 255);
 	}
 	#btn-menu:checked ~ #menu{
-		margin: 0;
+		margin-left: 0;
 	}
 	.logo{
 		display: none;
