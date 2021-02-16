@@ -99,13 +99,13 @@ header label:hover{
 	}
 }
 /*formulario*/
-form{
-	background-color: darkslategrey;
-	padding: 20px;
-	border-radius: 40px;
-	margin-left: 40%;
-	margin-top: 20%;
-	justify-content: right;
+form {
+    background-color: darkslategrey;
+    padding: 20px;
+    border-radius: 30px;
+    float: left;
+    margin: auto 40px;
+    padding: 40px;
 }
 form input{
 	width: 90%;
@@ -333,14 +333,34 @@ form label{
 	.integrantes p{
 		font-size: 17px;
 	}
+	.fotos{
+		margin: 0;
+	}
 	.gridcont{
+		margin: 0;
 		display: grid;
 		grid-template-columns: repeat(2,1fr);
 	}
+	.zoomimg{
+		margin: 0;
+	}
 	.discos{
 		width: 100%;
+		margin: 0;
 	}
 	form{
 		margin-left: 0;
+	}
+}
+@media (max-width: 480px) {	
+	.integrantes,
+	.gridcont {
+    		display: grid;
+    		grid-template-columns: 1fr;
+	}
+	#grid {
+    		display: grid;
+    		grid-template-columns: repeat(2,50%);
+    		grid-template-rows: repeat(4,1fr);
 	}
 }

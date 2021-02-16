@@ -1,8 +1,9 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: black; }
+  background-color: #000000; }
 
+/*logo "la vela puerca*/
 .logo {
   width: 200px;
   height: 80px;
@@ -19,7 +20,7 @@ body {
     opacity: 0; } }
 
 .titulo {
-  margin-top: 10px;
+  margin: 10px;
   font-family: fantasy;
   font-size: 50px;
   text-align: center;
@@ -28,6 +29,7 @@ body {
 #btn-menu {
   display: none; }
 
+/*btn*/
 header label {
   display: none;
   width: 100%;
@@ -37,7 +39,9 @@ header label {
   header label header label:hover {
     cursor: pointer; }
 
+/*barra menu*/
 #menu ul {
+  border-top: 1px solid brown;
   text-align: center;
   margin: 0;
   list-style: none;
@@ -49,59 +53,76 @@ header label {
     #menu ul #menu li:hover #menu li a {
       display: block;
       padding: 20px;
-      color: white;
+      color: #ffffff;
       text-decoration: none; }
 
 .contenedorvideo {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 20px; }
 
+/*spotify*/
 .spotify {
+  float: left;
   padding: 40px;
   margin-bottom: 30px; }
+  .spotify .spotify p {
+    text-align: center;
+    font-size: 15px;
+    font-family: serif;
+    background-color: #2f4f4f;
+    border-style: double;
+    padding: 15px;
+    border-radius: 20px;
+    color: #2f4f4f;
+    animation-name: spotify;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
 
-.contacto {
-  margin: 0;
-  color: #50bfff;
-  text-align: center;
-  font-size: 30px; }
+@keyframes spotify {
+  from {
+    color: #50bfff; }
+  to {
+    color: yellow; } }
 
-.formulario {
-  width: 300px;
-  text-align: center;
-  box-sizing: border-box;
-  border-radius: 20px;
-  margin-top: 20px;
-  background-color: #492525;
-  border: 5px;
+/*formulario*/
+form {
+  background-color: #2f4f4f;
   padding: 20px;
-  position: absolute;
-  right: 50px; }
-
-form input {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 8px;
-  font-size: 15px; }
-
-#textarea {
-  text-align: left; }
+  border-radius: 30px;
+  float: left;
+  margin: auto 40px;
+  padding: 40px; }
+  form form input {
+    width: 90%;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px; }
+    form form input form label {
+      color: #ffffff; }
 
 .contactenos {
+  text-align: center;
+  font-family: cursive;
   font-size: 20px;
-  color: cornsilk; }
+  color: #ffffff; }
 
 .titulolavela {
-  background-color: #29524e;
+  background-color: #2f4f4f;
   font-weight: bold;
   text-align: center;
   font-size: 50px;
   padding: 20px;
   margin: 20px; }
 
+/*seccion banda*/
 .bandap1 {
+  margin: 20px 20px 20px 20px;
+  padding: 20px;
   font-family: fantasy;
-  margin: 0;
   text-align: center;
   font-size: 50px; }
   .bandap1 .banda {
@@ -110,32 +131,31 @@ form input {
     padding: 20px;
     font-family: sans-serif;
     font-size: 50px;
-    color: #00ffe5; }
+    color: #50bfff; }
 
+/*seccion banda*/
 .integrantes {
   color: #286b70;
-  background-color: black;
+  background-color: #000000;
   text-align: center;
   font-family: Arial;
   font-size: 30px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 15px;
   align-items: center; }
-  .integrantes .integrantes1 {
-    width: 100%;
-    height: 100%;
-    margin: 5px; }
-    .integrantes .integrantes1 .integrantesimg {
+  .integrantes .integrante1 {
+    width: 100%; }
+    .integrantes .integrante1 .integrantesimg {
       width: 100%; }
 
+/*seccion historia*/
 .historia {
   margin: 20px 20px 20px 20px;
   padding: 20px;
-  color: #00ffe5;
+  color: #50bfff;
   font-size: 50px;
   font-family: sans-serif;
   text-align: center; }
@@ -145,74 +165,89 @@ form input {
     background-color: rgba(250, 197, 127, 0.705);
     font-size: 20px;
     font-family: sans-serif;
-    color: #0d1111; }
+    color: #000000;
+    border-radius: 20px; }
 
+/*seccion discos*/
 .discos {
   margin: 20px 20px 20px 20px;
   padding: 20px;
   text-align: center;
-  color: #00ffe5;
-  font-family: sans-serif;
-  font-size: 50px; }
+  color: #50bfff;
+  font-family: sans-serif; }
+  .discos .listadiscos ul {
+    list-style: none;
+    text-decoration: none; }
+    .discos .listadiscos ul .listadiscos {
+      font-size: 20px;
+      list-style: none;
+      text-align: center;
+      padding: 20px;
+      background-size: contain;
+      color: #2f4f4f; }
+      .discos .listadiscos ul .listadiscos .listadiscos a {
+        list-style: none;
+        text-decoration: none;
+        color: #2f4f4f; }
 
-.listadiscos {
-  text-align: center;
-  padding: 20px;
-  background-size: contain;
-  color: #28694b; }
-
-.listadiscos a {
-  text-decoration: none;
-  color: darkslategrey; }
-
+/*seccion fotos*/
 .fotos {
   margin: 20px 20px 20px 20px;
   padding: 20px;
   text-align: center;
-  color: #00ffe5;
+  color: #50bfff;
   font-family: sans-serif;
   font-size: 50px; }
 
+/*grid de fotos*/
 .gridcont {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   align-items: center; }
-  .gridcont .zoomimg:hover {
-    transform: scale(1.1); }
-    .gridcont .zoomimg:hover .zoomimg {
-      width: 100%;
-      object-fit: cover;
-      padding: 10px;
-      margin: 10px; }
 
+.zoomimg:hover {
+  transform: scale(1.1); }
+  .zoomimg:hover .zoomimg {
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #50bfff;
+    border-style: ridge;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px; }
+
+/*redes*/
 .redes h2 {
   text-align: center;
   padding-top: 30px;
   font-size: 15px;
   font-family: cursive;
-  color: #167269; }
+  color: #2f4f4f; }
   .redes h2 .redes ul {
-    padding: 30px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 8%);
+    grid-template-columns: repeat(4, 40px);
     justify-content: center; }
     .redes h2 .redes ul .redes li {
       display: inline-block;
-      width: 20px; }
+      width: 70%; }
       .redes h2 .redes ul .redes li .redes li:hover {
         transform: scale(1.2); }
 
 .creador {
   text-align: center;
-  color: #167269;
+  color: #2f4f4f;
   font-size: 15px;
   font-weight: bold;
   font-family: cursive; }
 
+/*fotos de discos*/
 #grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -227,28 +262,55 @@ form input {
 
 @media screen and (max-width: 768px) {
   header label {
-    background-color: #29524e;
+    background-color: #000000;
     display: block; }
   #menu {
     position: absolute;
-    background: darkcyan;
-    width: 70%;
+    background: #50bfff;
+    width: 50%;
     margin-left: -100%; }
     #menu #menu ul {
       flex-direction: column; }
       #menu #menu ul #menu li {
-        border-top: 1px solid #00ff88; }
+        border-top: 1px solid #50bfff; }
   #btn-menu:checked ~ #menu {
-    margin: 0; }
+    margin-left: 0; }
+  .logo {
+    display: none; }
   .titulo {
     text-align: center;
-    color: deepskyblue; }
+    color: #50bfff; }
   #menu {
     position: absolute;
     text-align: center;
-    background-color: #2e2929; }
+    background-color: #000000; }
   .contenedorvideo {
     width: 100%; }
   .titulolavela {
     text-align: center;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .integrantes p {
+    font-size: 17px; }
+  .fotos {
+    margin: 0; }
+  .gridcont {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .zoomimg {
+    margin: 0; }
+  .discos {
+    width: 100%;
+    margin: 0; }
+  form {
+    margin-left: 0; } }
+
+@media (max-width: 480px) {
+  .integrantes,
+  .gridcont {
+    display: grid;
+    grid-template-columns: 1fr; }
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 1fr); } }
