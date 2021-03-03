@@ -49,7 +49,7 @@ header label{
         cursor: pointer;
     }}
     /*barra menu*/
-    #menu ul{
+    @mixin menu {
         border-top: 1px solid brown;
         text-align: center;
         margin: 0;
@@ -57,6 +57,9 @@ header label{
         padding: 0;
         display: flex;
         justify-content: center;
+    }
+    #menu ul{
+        @include menu;
         #menu li:hover{
             background: rgba(0, 0, 0, 0.3);
             #menu li a{
@@ -164,13 +167,16 @@ header label{
                                         width: 100%;
                                     }}}
                                     /*seccion historia*/
-                                    .historia{
+                                    @mixin historia {
                                         margin: 20px 20px 20px 20px;
                                         padding: 20px;
                                         color: $celeste;
                                         font-size: 50px;
                                         font-family: sans-serif;
                                         text-align: center;
+                                    }
+                                    .historia{
+                                        @include historia;
                                         .historiap{
                                             margin: 10px;
                                             padding: 20px;
@@ -345,3 +351,4 @@ header label{
                                                                                             grid-template-rows: repeat(4,1fr);
                                                                                         }
                                                                                     }
+                                                                                    

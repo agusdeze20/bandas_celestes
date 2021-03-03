@@ -24,9 +24,11 @@ body{
 	
 }
 .titulo{
-	margin: 10px;
+	width: 96%;
+	margin: 30px;
+	padding: 10px;
 	font-family: fantasy;
-	font-size: 50px;
+	font-size: 55px;
 	text-align:center;
 	color: rgb(80, 191, 255);
 }
@@ -48,12 +50,15 @@ header label:hover{
 /*barra menu*/
 #menu ul{
 	border-top: 1px solid brown;
-	text-align: center;
-	margin: 0;
+	margin: 20px;
 	list-style: none;
 	padding: 0;
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+
+}
+#menu li{
+	display: inline-block;
 }
 #menu li:hover{
 	background: rgb(0,0,0,0.3);
@@ -100,17 +105,19 @@ header label:hover{
 }
 /*formulario*/
 form {
-    background-color: darkslategrey;
-    padding: 20px;
-    border-radius: 30px;
-    float: left;
-    margin: auto 40px;
-    padding: 40px;
+	background-color: darkslategrey;
+	padding: 20px;
+	border-radius: 30px;
+	float: left;
+	margin: auto 20px;
+	padding: 50px;
+	width: 100%;
+	height: 70%;
 }
 form input{
 	width: 90%;
 	margin: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	padding: 10px;
 	font-size: 15px;
 }
@@ -225,24 +232,22 @@ form label{
 .gridcont{
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(2,49%);
 	grid-template-rows: repeat(3,1fr);
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	align-items: center;
 }
-.zoomimg:hover{
-	transform: scale(1.1);
-	
-}
+
 .zoomimg{
 	border-width: 2px;
-	border-radius: 30px;
+	border-radius: 20px;
 	border-color: skyblue;
 	border-style:ridge;
 	width: 100%;
+	height: 75%;
 	object-fit: cover;
-	padding: 10px;
+	padding: 5px;
 	margin: 10px;
 }
 /*redes*/
@@ -254,6 +259,7 @@ form label{
 	color:rgb(22, 114, 105);
 }
 .redes ul{
+
 	padding: 10px;
 	margin: 10px;
 	display: grid;
@@ -299,14 +305,16 @@ form label{
 	#menu{
 		position: absolute;
 		background: darkcyan;
-		width: 50%;
+		width: 35%;
 		margin-left: -100%;
 	}
 	#menu ul{
 		flex-direction: column;
+		border-top: none;
 	}
 	#menu li{
 		border-top: 1px solid rgb(0, 255, 255);
+		width: 100%;
 	}
 	#btn-menu:checked ~ #menu{
 		margin-left: 0;
@@ -348,19 +356,16 @@ form label{
 		width: 100%;
 		margin: 0;
 	}
-	form{
-		margin-left: 0;
-	}
 }
 @media (max-width: 480px) {	
 	.integrantes,
 	.gridcont {
-    		display: grid;
-    		grid-template-columns: 1fr;
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 	#grid {
-    		display: grid;
-    		grid-template-columns: repeat(2,50%);
-    		grid-template-rows: repeat(4,1fr);
+		display: grid;
+		grid-template-columns: repeat(2,50%);
+		grid-template-rows: repeat(4,1fr);
 	}
 }
