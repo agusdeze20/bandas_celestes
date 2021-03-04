@@ -55,7 +55,7 @@ header label:hover{
 	padding: 0;
 	text-align: center;
 	text-decoration: none;
-
+	
 }
 #menu li{
 	display: inline-block;
@@ -106,18 +106,17 @@ header label:hover{
 /*formulario*/
 form {
 	background-color: darkslategrey;
-	padding: 20px;
-	border-radius: 30px;
-	float: left;
-	margin: auto 20px;
+	padding: 30px;
+	border-radius: 50px;
+	float: center;
+	margin: 100px;
 	padding: 50px;
 	width: 100%;
-	height: 70%;
 }
 form input{
-	width: 90%;
+	width: 100%;
 	margin: 10px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding: 10px;
 	font-size: 15px;
 }
@@ -245,7 +244,7 @@ form label{
 	border-color: skyblue;
 	border-style:ridge;
 	width: 100%;
-	height: 75%;
+	height: 80%;
 	object-fit: cover;
 	padding: 5px;
 	margin: 10px;
@@ -259,7 +258,7 @@ form label{
 	color:rgb(22, 114, 105);
 }
 .redes ul{
-
+	
 	padding: 10px;
 	margin: 10px;
 	display: grid;
@@ -305,7 +304,7 @@ form label{
 	#menu{
 		position: absolute;
 		background: darkcyan;
-		width: 35%;
+		width: 50%;
 		margin-left: -100%;
 	}
 	#menu ul{
@@ -350,11 +349,16 @@ form label{
 		grid-template-columns: repeat(2,1fr);
 	}
 	.zoomimg{
-		margin: 0;
+		margin: auto;
+		height: 100%;
 	}
 	.discos{
 		width: 100%;
 		margin: 0;
+	}
+	form{
+		width: 100%;
+		margin: 15px;
 	}
 }
 @media (max-width: 480px) {	
